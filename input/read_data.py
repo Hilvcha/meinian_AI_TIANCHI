@@ -65,7 +65,7 @@ def read_data(part1_path, part2_path):
     # 行列转换
     print('finish')
     tmp = tmp.pivot(index='vid', values='field_results', columns='table_id')
-    tmp.to_csv(Configure.cleaned_path)
+    tmp.to_csv(Configure.cleaned_path,encoding="utf8")
     print(tmp.shape)
     print('totle time', time.time() - begin_time)
 

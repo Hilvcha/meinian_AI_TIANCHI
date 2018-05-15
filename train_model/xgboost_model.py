@@ -16,7 +16,7 @@ from conf.configure import Configure
 
 @time_this
 def model_train(train_set, test_set):
-    train, test, train_label, test_index = merge_datasets(train_set, test_set)
+    train_data, test_data, train_label = merge_datasets(train_set, test_set)
     print(train.head(3))
     print('train.', train.axes)
     user_id = test.pop('TERMINALNO')

@@ -16,8 +16,8 @@ def time_this(func):
 
 # 取得目标向量
 def get_label(df):
-    del df[]
-    return df_label
+    df_droped=df.drop([df.columns[0]], axis=1)
+    return df_droped
 
 
 # 时间戳转化
